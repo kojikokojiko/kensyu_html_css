@@ -49,7 +49,7 @@ nav ul li a:hover {
     justify-content: flex-start; /* 横方向の左詰め（必要に応じて調整） */
 }
 
-.header-small-container{
+.header-top-container{
     display: flex; /* フレックスボックスを利用 */
     justify-content: space-between; /* 子要素を両端に配置 */
 
