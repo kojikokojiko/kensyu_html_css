@@ -8,7 +8,7 @@ header {
 .header-container {
     max-width: 80%; /* 最大幅を設定 */
     margin: 0 auto; /* 左右中央寄せ */
-    padding: 20px; /* 内側の余白 */
+    padding: 10px; /* 内側の余白 */
 
     /* display: flex; フレックスボックスを利用 */
     justify-content: space-between; /* 子要素を両端に配置 */
@@ -55,18 +55,22 @@ header {
 .header-bottom-container ul {
     list-style: none; /* リストの点を無くす */
     padding: 0; /* パディングをリセット */
+    margin: 0; /* マージンをリセット */
     display: flex; /* 横並びにする */
 }
 
 .header-bottom-container ul li {
     padding: 0px 10px; /* 各リストアイテムのパディングを調整 */
-    margin-left: 0 15px; /* リスト項目間のマージン */
+    
     border-right: 0.5px solid #ccc; /* 右側に縦線を追加 */
 }
 .header-bottom-container ul li:last-child {
     border-right: none; /* 最後の要素の縦線を除去 */
 }
 
+.header-bottom-container ul li:first-child {
+    padding-left: 0; /* 最初の要素の左側のパディングを除去 */
+}
 .header-bottom-container  a {
     text-decoration: none; /* リンクの下線を無くす */
     display: inline-block; /* ブロック要素のように振る舞わせる */
@@ -109,7 +113,7 @@ header {
 .header-top-container{
     display: flex; /* フレックスボックスを利用 */
     justify-content: space-between; /* 子要素を両端に配置 */
-
+    align-items: center;
 }
 
 .header-top-container nav{
@@ -130,10 +134,11 @@ header {
     border-radius: 5px;
     overflow: hidden; /* 子要素がボックスからはみ出さないようにする */
     width: 400px; /* 幅を指定 */
-    /* height: 50px; 高さを指定 */
+    height: 50px; 
     align-items: stretch; /* 子要素をコンテナの高さいっぱいに伸ばす */
 
 }
+
 
 .search-form input[type="text"] {
     border: none;
@@ -141,6 +146,7 @@ header {
     padding: 8px;
     width: 100%; /* 入力エリアを広げる */
     outline: none; /* アクティブ時のアウトラインを削除 */
+
 }
 
 /* .search-form button {
@@ -150,10 +156,11 @@ header {
 .search-submit-button{
     border: none; /* ボーダーを消す */
     background-color: #3081C9;
-    /* padding: 8px; 左右のパディング */
-    flex-grow: 1; /* Flexboxのプロパティで領域を埋める */
-    
-
+    height: 100%;
+    aspect-ratio: 1 / 1; /* 幅に対して高さが1:1の比率になるよう設定します */
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .search-submit-button i{
