@@ -1,0 +1,35 @@
+
+
+
+.category-navbar {
+    background-color: white; 
+    ul{
+        list-style-type: none; /* リストの記号をなくす */
+        overflow: hidden;
+        display: flex; /* アイテムを横並びにする */
+        justify-content: center; /* 中央揃え */
+        li{
+            font-size: 15px; /* フォントサイズ */
+            float: left;
+
+            a{
+                display: block; /* リンクをブロック要素に */
+                color:#294C7A; /* リンクのテキスト色 */
+                text-align: center;
+                padding: 14px 10px; /* リンクのパディング */
+                text-decoration: none; /* 下線を消す */
+
+                &.category-navbar--active {
+                    font-weight: bold; /* アクティブなリンクのテキストを太字に */
+                }
+
+                &:hover {
+                    font-weight: bold; /* ホバー時の背景色 */
+                }
+
+            }
+        }
+    }
+}
+
+
