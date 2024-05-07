@@ -1,9 +1,16 @@
+/* グローバルリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ボックスサイズを境界線を含むサイズに設定 */
+}
 /* ヘッダー全体のスタイリング */
 header {
     background-color: #24436F; /* 背景色 */
     color: white; /* テキスト色 */
     /* padding: 10px 20px; 上下左右のパディング */
 }
+
 
 .header-container {
     max-width: 80%; /* 最大幅を設定 */
@@ -71,6 +78,7 @@ header {
 .header-bottom-container ul li:first-child {
     padding-left: 0; /* 最初の要素の左側のパディングを除去 */
 }
+
 .header-bottom-container  a {
     text-decoration: none; /* リンクの下線を無くす */
     display: inline-block; /* ブロック要素のように振る舞わせる */
@@ -167,3 +175,4 @@ header {
     color: #e9eef3;
     /* background-color: #b2bac1; */
 }
+
