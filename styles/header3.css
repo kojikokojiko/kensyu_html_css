@@ -54,8 +54,8 @@ header {
 
                     li{
                         padding: 0px 10px; /* 各リストアイテムのパディングを調整 */
-                        margin-left: 0px; /* リスト項目間のマージン */
-                        border-right: 0.5px solid #ccc; /* 右側に縦線を追加 */
+                        margin-left: 0; /* リスト項目間のマージン */
+                        border-right: 0.5px solid #BFC9D7; /* 右側に縦線を追加 */
                         font-size: 13px;
 
                         &:last-child{
