@@ -117,6 +117,7 @@ header {
         }
         .active{
             color: white; /* アクティブ時のテキスト色を白に */
+            font-weight: 700;
         }
     }
 }
