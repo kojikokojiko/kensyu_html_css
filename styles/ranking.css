@@ -81,9 +81,6 @@
        
                 }
             }
-            .card__textbox > * + *{
-                margin-top: 10px;
-            }
         }
     }
 }
