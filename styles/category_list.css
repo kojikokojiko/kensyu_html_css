@@ -2,16 +2,13 @@
 
 
 .category-navbar {
-    background-color: white; 
+    background-color: white;
     ul{
         list-style-type: none; /* リストの記号をなくす */
-        overflow: hidden;
         display: flex; /* アイテムを横並びにする */
         justify-content: center; /* 中央揃え */
         li{
             font-size: 13px; /* フォントサイズ */
-            float: left;
-
             a{
                 display: block; /* リンクをブロック要素に */
                 color:#294C7A; /* リンクのテキスト色 */
