@@ -9,6 +9,12 @@
 a{
     text-decoration: none;
 }
+
+
+ul{
+    list-style-type: none; /* リストの記号をなくす */
+}
+
 /* ヘッダー全体のスタイリング */
 header {
     background-color: #24436F; /* 背景色 */
@@ -52,7 +58,6 @@ header {
                 /* padding: 10px; 内側の余白 */
                 height: 100%;
                 ul{
-                    list-style: none; /* リストの点を無くす */
                     padding-top: 4px; /* パディングをリセット */
                     display: flex; /* 横並びにする */
                     justify-items: center; /* 子要素を両端に配置 */
