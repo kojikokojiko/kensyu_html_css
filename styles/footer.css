@@ -1,0 +1,93 @@
+.footer{
+    position: static; /* フッターを通常の流れに戻す */
+    background-color: #FAFAFA;
+    
+    display: flex;
+    justify-items: start;
+    padding-top: 60px;
+    
+    bottom: 0;
+    height:auto;
+
+    .footer-container{
+        margin: 0 auto; /* 左右中央寄せ */
+        width: 1127px;
+        display: flex;
+        flex-direction: column;
+
+        .faint-text *{
+            color: #797979;
+        }
+
+        .footer-menu{
+            display:flex;
+            padding-bottom: 30px;
+            /* justify-content: space-between; */
+
+            .menu-title{
+                font-size: 13px;
+                padding-bottom: 10px;
+            }
+
+            .footer-menu-item{
+                font-size: 13px;
+                line-height: 250%;
+                a:hover{
+                    text-decoration: underline;
+                    color: black;
+
+                }
+            }
+
+            .footer-menu__PR-service{
+                width: 281px;
+            }
+
+
+            .footer-menu__recommend-service{
+                width: 560px;
+
+                .recommend-service-item{
+                    display: flex;
+                    /* justify-content: space-between; */
+                    .recommend-service-item__left-column,
+                    .recommend-service-item__right-column{
+                        display: flex;
+                        flex-direction: column;
+                        padding-right: 30px ;
+                    }
+                }
+            }
+        }
+
+
+
+        .footer-terms{
+            display: flex;
+            justify-content:start;
+            padding-top: 7px;
+            border-top: 1px solid #E5E5E5;
+        
+            .footer-terms__list{
+                display: flex;
+                padding: 10px 0;
+                font-size: 12px;
+
+                a{
+                    margin-right: 10px;
+                }
+                a:hover{
+                    text-decoration: underline;
+                    color: black;
+
+                }
+            }
+        }
+
+        .footer-copyright{
+            color: #797979;
+            font-size: 12px;
+
+        }
+    }
+}

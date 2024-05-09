@@ -1,9 +1,10 @@
 .main-container{
     width: 1127px;
-    height: 803.35px;
+    height: 900.35px;
     /* background-color: white; */
     margin: 0 auto;
     padding-top:25px;
+    /* padding-bottom:50px; */
     display: flex;
     justify-content: space-between;
     
