@@ -26,6 +26,9 @@
                 height: auto; /* 画像の高さに合わせる */
                 img {
                     border-bottom: 0.01px solid #f8f4f4; /* 下線 */
+                    width: 181px;
+                    height: 100px;
+                    object-fit: cover; /* 画像を背景に設定した時のbackground-sizeのようにコンテンツに対してどのように画像を切り取るか指定可能な命令です。今回であれば画像の表示エリアは指定したサイズで、そこから切り取って表示可能です。 */
                 }
 
                 h3{
