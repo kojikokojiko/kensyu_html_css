@@ -1,14 +1,127 @@
 .main-container{
     width: 1127px;
     height: 803.35px;
-    background-color: #d6b6b6;
+    /* background-color: white; */
     margin: 0 auto;
+    padding-top:25px;
     display: flex;
+    justify-content: space-between;
+    
 
     .new-release-container{
         /* background-color: #f8f8f8; */
         display: flex;
+        flex-direction: column;
+        width: 778px;
+        padding-bottom: 20px;
+        .new-release-header{
+            padding-bottom: 20px;
+        }
+
+        .new-release-main{
+            display: flex;
+            flex-direction: column;
+
+
+
+            .new-release-card-list{
+                display:grid ;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(5,118px);
+                gap: 10px 20px; 
+                padding-bottom: 30px;
+
+                
+                .new-release-item{
+                    /* height: 380px; */
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #F1F1F1;
+                    padding: 0px 0px 13px 0px;
+
+                    .new-release-item__text{
+                        padding-right: 10px;
+                        
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .new-release-item__title{
+                            font-size: 14px;
+                            max-height: 66px;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 3; 
+                            overflow: hidden; /* コンテンツがオーバーフローした場合に非表示にする */
+                        }
+                        .new-release-item__company{
+                            font-size: 12px;
+                            color: #A2A2A2;
+                            
+                        }   
+                        .new-release-item__company::before{
+                            content: "\f017"; /* Font Awesomeの時計アイコンのUnicode */
+                            font-family: "Font Awesome 5 Free"; /* Font Awesomeのフォントファミリー */
+                            font-weight: 900; /* アイコンの太さ */
+                            margin-right: 2px; /* アイコンとテキストの間の余白 */
+                        }
+                    }
+                    .new-release-item__img{
+                        width: 100px;
+                        height: 66px;
+                    }
+                }
+            }
+            .new-release__button--more{
+                background-color: #3081C9;
+                border:none;
+                color: #FFFFFF;
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+                margin: 0 auto;
+                width: 110px;
+                height:38px;
+            }
+
+        }
+
 
     }
+
+    .attention-keyword-container{
+        /* background-color: #f8f8f8; */
+        display: flex;
+        flex-direction: column;
+        width: 312px;
+        .attention-keyword-title{
+            padding-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .attention-keyword__list{
+            line-height: 200%;
+            padding-bottom: 20px;
+            border-bottom: #F1F1F1 2px solid;
+        }
+        .attention-keyword__list * {
+            font-size: 12px;
+            color:#3B3B3B;
+            border-radius: 10px;
+            background-color: #F1F1F1;
+            padding: 2px 8px;
+            box-sizing: border-box;  /* パディングとボーダーを要素の寸法に含める */
+            white-space: nowrap; 
+        }
+
+        .attention-keyword__item-link--more{
+            border: 1px solid #F1F1F1;
+            background-color: white;
+
+
+        }
+        
+    }
+
+
 
 }
