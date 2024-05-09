@@ -68,13 +68,11 @@
                         text-decoration-color: blue; /* ホバー時の下線の色も青に */
                         color: blue; /* ホバー時のテキスト色を青に */
                     }
-
-
                     .new-release-item__company{
                         font-size: 12px;
                         color: #A2A2A2;
                         .new-release-item__time{
-                            padding-right: 5px;
+                            margin-right: 5px;
                         }
                         
                     }   
