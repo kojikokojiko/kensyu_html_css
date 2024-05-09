@@ -5,6 +5,9 @@
     box-sizing: border-box; /* ボックスサイズを境界線を含むサイズに設定 */
     
 }
+body{
+    min-width: 1127px;
+}
 
 a{
     text-decoration: none;
