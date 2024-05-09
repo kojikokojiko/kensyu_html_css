@@ -35,16 +35,24 @@
                 .new-release-item{
                     /* height: 380px; */
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-between;
                     border-bottom: 1px solid #F1F1F1;
                     padding: 0px 0px 13px 0px;
 
-                    .new-release-item__text{
+                    .new-release-item__article{
                         padding-right: 10px;
+                        color: #3B3B3B;
+                        transition: color 0.3s ease, text-decoration-color 0.3s ease; /* 色変更のトランジションを設定 */
                         
                         display: flex;
-                        flex-direction: column;
                         justify-content: space-between;
+
+                        .new-release-item__img{
+                            width: 100px;
+                            height: 66px;
+                        }
+
                         .new-release-item__title{
                             font-size: 14px;
                             max-height: 66px;
@@ -53,22 +61,32 @@
                             -webkit-line-clamp: 3; 
                             overflow: hidden; /* コンテンツがオーバーフローした場合に非表示にする */
                         }
-                        .new-release-item__company{
-                            font-size: 12px;
-                            color: #A2A2A2;
-                            
-                        }   
-                        .new-release-item__company::before{
-                            content: "\f017"; /* Font Awesomeの時計アイコンのUnicode */
-                            font-family: "Font Awesome 5 Free"; /* Font Awesomeのフォントファミリー */
-                            font-weight: 900; /* アイコンの太さ */
-                            margin-right: 2px; /* アイコンとテキストの間の余白 */
-                        }
                     }
-                    .new-release-item__img{
-                        width: 100px;
-                        height: 66px;
+
+                    .new-release-item__article:hover{
+                        text-decoration: underline;
+                        text-decoration-color: blue; /* ホバー時の下線の色も青に */
+                        color: blue; /* ホバー時のテキスト色を青に */
                     }
+
+
+                    .new-release-item__company{
+                        font-size: 12px;
+                        color: #A2A2A2;
+                        
+                    }   
+                    .new-release-item__company::before{
+                        content: "\f017"; /* Font Awesomeの時計アイコンのUnicode */
+                        font-family: "Font Awesome 5 Free"; /* Font Awesomeのフォントファミリー */
+                        font-weight: 900; /* アイコンの太さ */
+                        margin-right: 2px; /* アイコンとテキストの間の余白 */
+                    }
+
+                    .new-release-item__company:hover{
+                        color: #3B3B3B;
+                    }
+
+
                 }
             }
             .new-release__button--more{
@@ -83,6 +101,9 @@
                 height:38px;
             }
 
+            .new-release__button--more:hover{
+                background-color: #59a7e6;
+            }
         }
 
 
