@@ -1,0 +1,91 @@
+.ranking-container {
+    background-color: #f8f8f8;
+    display: flex;
+    height: 263px;
+
+    .ranking-card-list{
+        width: 1127px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        height: 263px;
+        padding: 22.5px 0;
+
+        .ranking-card{
+            width: 181px;
+            height: 100%;
+            /* overflow: hidden; */
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            
+            .ranking-card-img {
+                position: relative;
+                width: 181px; /* 画像の幅に合わせる */
+                height: auto; /* 画像の高さに合わせる */
+                img {
+                    border-bottom: 0.01px solid #f8f4f4; /* 下線 */
+                    width: 181px;
+                    height: 100px;
+                    object-fit: cover; /* 画像を背景に設定した時のbackground-sizeのようにコンテンツに対してどのように画像を切り取るか指定可能な命令です。今回であれば画像の表示エリアは指定したサイズで、そこから切り取って表示可能です。 */
+                }
+
+                h3{
+                    font-size: 13.5px;
+                    line-height: 17.2px;
+                    font-weight: normal;
+                    padding-top: 5px;
+                    color: #3B3B3B;
+                }
+
+                .rank-number {
+                    position: absolute;
+                    width: 24px; /* 正方形の幅 */
+                    height: 24px; /* 正方形の高さ、幅と同じにする */
+                    top: 0; /* トップからの位置 */
+                    left: 0; /* 右からの位置 */
+                    background-color: #294C7A; /* 背景色 */
+                    color: white; /* 文字色 */
+                    padding: 5px; /* パディング */
+                    border: none; /* ボーダー設定（必要に応じて） */
+                    font-size: 17px; /* フォントサイズ */
+                    display: flex;
+                    justify-content: center; /* 横方向の中央揃え */
+                    align-items: center; /* 縦方向の中央揃え */
+                    font-style: italic;
+
+                    span {
+                        transform: translateX(-1px); /* 斜体によるズレの調整 */
+                    }                   
+                }
+            }
+            .ranking-detail-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                flex-grow: 1; /* 残りのスペースをすべて使用する */
+                width: 100%;
+                height: auto;
+                padding: 5px 5px;
+                font-size: 12px;
+                line-height: 100%;
+                overflow: hidden;
+                color: #A2A2A2;
+                .clock::before{
+                    content: "\f017"; /* Font Awesomeの時計アイコンのUnicode */
+                    font-family: "Font Awesome 5 Free"; /* Font Awesomeのフォントファミリー */
+                    font-weight: 900; /* アイコンの太さ */
+                    margin-right: 5px; /* アイコンとテキストの間の余白 */
+                }
+                a{
+                    color: #A2A2A2;
+                }
+       
+                }
+            }
+        }
+    }
+}
+
+

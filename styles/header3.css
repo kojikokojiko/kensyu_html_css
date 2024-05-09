@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* ボックスサイズを境界線を含むサイズに設定 */
+    
+}
+
+a{
+    text-decoration: none;
 }
 /* ヘッダー全体のスタイリング */
 header {
@@ -63,7 +68,7 @@ header {
                         }
 
                         a{
-                            text-decoration: none; /* リンクの下線を無くす */
+
                             display: inline-block; /* ブロック要素のように振る舞わせる */
                             color: white; /* デフォルトのテキスト色を灰色に */
                             border-bottom: 1px solid transparent; /* 見た目を保持するために透明なボーダーを設定 */
@@ -105,7 +110,7 @@ header {
                 }
 
                 a{
-                    text-decoration: none; /* リンクの下線を無くす */
+
                     display: inline-block; /* ブロック要素のように振る舞わせる */
                     color: #808080; /* デフォルトのテキスト色を灰色に */
 
