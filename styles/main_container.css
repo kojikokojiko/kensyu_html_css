@@ -73,6 +73,9 @@
                     .new-release-item__company{
                         font-size: 12px;
                         color: #A2A2A2;
+                        .new-release-item__time{
+                            padding-right: 5px;
+                        }
                         
                     }   
                     .new-release-item__company::before{
