@@ -19,7 +19,7 @@
             background-color: #ffffff;
             display: flex;
             flex-direction: column;
-            
+
             .ranking-card-img {
                 position: relative;
                 width: 181px; /* 画像の幅に合わせる */
@@ -81,11 +81,9 @@
                 a{
                     color: #A2A2A2;
                 }
-       
+
                 }
             }
         }
     }
 }
-
-
